@@ -1,0 +1,11 @@
+{
+  "name": "@eggs/mitt",
+  "version": "0.1.0",
+  "description": "Cook'n'JS static server",
+  "main": "index.js",
+  "author": "spadino @cooknjs",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}
