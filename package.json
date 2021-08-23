@@ -1,0 +1,8 @@
+{
+  "name": "@cooknjs/eggs",
+  "version": "0.1.0",
+  "description": "Cook'n'JS modules and libraries",
+  "main": "index.js",
+  "author": "spadino @cooknjs",
+  "license": "MIT"
+}
