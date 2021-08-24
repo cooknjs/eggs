@@ -1,15 +1,48 @@
 {
-  "name": "mitt",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "@eggs/mitt",
+  "description": "Mitt is a simple static server built on Fastify",
+  "version": "0.1.0",
+  "author": "spadino @spadino",
+  "bin": {
+    "mitt": "./bin/run"
+  },
+  "bugs": "https://github.com/cooknjs/eggs/issues",
   "dependencies": {
-    "fastify": "^3.20.2",
-    "fastify-no-icon": "^4.0.0",
-    "fastify-static": "^4.2.3",
-    "livereload": "^0.9.3"
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "fastify-graceful-shutdown": "^3.1.0"
   },
   "devDependencies": {
-    "mocha": "^9.1.0"
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "mocha": "^5",
+    "nyc": "^14"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/cooknjs/eggs",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "mitt"
+  },
+  "repository": "cooknjs/eggs",
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "name": "mitt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.20.2",
+    "fastify-no-icon": "^4.0.0",
+    "fastify-static": "^4.2.3",
+    "livereload": "^0.9.3",
+    "oclif": "^1.18.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.0"
+  }
+}
